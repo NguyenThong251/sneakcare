@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/account.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- toast -->
+    <div class="toast__success">
+      <div class="toast">
+        <div class="toast__container">
+          <div class="toast__main">
+            <div class="toast__header">
+              <i id="check" class="toast__icon bi bi-check-circle-fill"></i>
+              <i id="delete" class="toast__icon bi bi-x-lg"></i>
+            </div>
+            <div class="toast__body">
+              <div class="toast__button">
+                <a href="#" class="toast__button-link"
+                  ><button class="toast__btn btn">Success</button></a
+                >
+                <a href="#" class="toast__button-link"
+                  ><button class="toast__btn btn history">History</button></a
+                >
+              </div>
+              <div class="toast__body_content">
+                <img
+                  src="../img/logo toast.png"
+                  alt=""
+                  class="toast__body_content-logo"
+                />
+                <h3 class="toast__body_content-thanks">
+                  Thank you customers for ordering
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+      <header class="header">
+        <div class="header-main grid">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" class="header__logo-img" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-ul">
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Home</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Man</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Women</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Sales</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Collection</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <!-- icon list -->
+            <div class="menu__nav_list">
+              <i class="menu__nav_list-icon bi bi-list"></i>
+            </div>
+            <div class="header__right-user">
+              <a href="#">
+                <i class="header__right-icon bi bi-person-circle"></i
+              ></a>
+            </div>
+            <div class="header__right-cart">
+              <a href="./cart.html">
+                <i class="header__right-icon bi bi-cart-check-fill"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content__header">
+        <span class="content__header-span"
+          ><h3 class="content__header-h3">FREE DELIVERY</h3>
+          in orders over $400 - Buy with confidence: Free Return and
+          cashback</span
+        >
+      </div>
+      <!-- main -->
+      <div class="main__cart grid">
+        <!--Account-->
+        <a href="" class="accont__back">
+          <div class="account__back_icon"><i class="bi bi-arrow-left"></i></div>
+          <h3 class="account__back_text">Back</h3>
+        </a>
+        <div class="accont__main">
+          <div class="acoount__main_list">
+            <div class="acoount__main_list_content">
+              <div class="acoount__main_list_profile">
+                <img
+                  class="acoount__main_list_image"
+                  src="../img/profile images.png"
+                  alt=""
+                />
+                <div class="acoount__main_list_info">
+                  <span class="acoount__main_list_span">Welcome back,</span>
+                  <h2 class="acoount__main_list_name">Ronald Richards</h2>
+                </div>
+              </div>
+              <div class="acoount__main_list_search">
+                <div class="acoount__main_list_search_icon">
+                  <i class="bi bi-search"></i>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="acoount__main_list_search_input"
+                />
+              </div>
+              <a
+                href="#"
+                class="acoount__main_list_option acoount__main_list_option--active"
+              >
+                <div class="acoount__main_list_option_content">
+                  <i
+                    class="acoount__main_list_option_iconleft bi bi-gear-fill"
+                  ></i>
+                  <h2 class="acoount__main_list_option_text">
+                    Account Settings
+                  </h2>
+                  <i class="acoount__main_list_option_iconright bi bi-list"></i>
+                </div>
+              </a>
+              <a href="#" class="acoount__main_list_option">
+                <div class="acoount__main_list_option_content">
+                  <i
+                    class="acoount__main_list_option_iconleft bi bi-bag-plus-fill"
+                  ></i>
+                  <h2 class="acoount__main_list_option_text">
+                    History product
+                  </h2>
+                  <i class="acoount__main_list_option_iconright bi bi-list"></i>
+                </div>
+              </a>
+              <a href="#" class="acoount__main_list_option">
+                <div class="acoount__main_list_option_content">
+                  <i
+                    class="acoount__main_list_option_iconleft bi bi-shield-fill-plus"
+                  ></i>
+                  <h2 class="acoount__main_list_option_text">Security</h2>
+                  <i class="acoount__main_list_option_iconright bi bi-list"></i>
+                </div>
+              </a>
+              <a href="#" class="acoount__main_list_option">
+                <div class="acoount__main_list_option_content">
+                  <i
+                    class="acoount__main_list_option_iconleft bi bi-box-arrow-in-left"
+                  ></i>
+                  <h2 class="acoount__main_list_option_text">Log Out</h2>
+                  <i class="acoount__main_list_option_iconright bi bi-list"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="account__main_setting">
+            <div class="account__main_setting_header">
+              <a href="#" class="account__main_setting_header_content">
+                <div class="account__main_setting_icon">
+                  <i class="bi bi-arrow-left-circle-fill"></i>
+                </div>
+                <div class="account__main_setting_header_text">
+                  Account Settings
+                </div>
+              </a>
+            </div>
+            <div class="account__main_setting_body">
+              <div class="account__main_setting_body_left">
+                <div class="account__main_setting_body_left_content">
+                  <div class="account__main_setting_body_left_content_h3">
+                    User Information
+                  </div>
+                  <div class="account__main_setting_body_left_content_span">
+                    Here you can edit public information about yourself. The
+                    changes will be displayed for other users within 5 minutes
+                  </div>
+                </div>
+                <form
+                  class="account__main_setting_body_left_form-info"
+                  action=""
+                >
+                  <div class="account__main_setting_body_left_form-info_main">
+                    <div class="account__main_setting_body_left_form_header">
+                      <h3
+                        class="account__main_setting_body_left_form-info_header_title"
+                      >
+                        Personal Infomation
+                      </h3>
+                      <a
+                        href=""
+                        class="account__main_setting_body_left_form-info_header_edit"
+                      >
+                        <i
+                          class="account__main_setting_body_left_form-info_header_edit-icon bi-pencil"
+                        ></i>
+                        <h3
+                          class="account__main_setting_body_left_form-info_header_edit-text"
+                        >
+                          Edit
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="form__email">
+                      <div class="form__email_group">
+                        <i class="bi bi-envelope"></i>
+                        <input type="text" placeholder="Email" />
+                      </div>
+                    </div>
+                    <div class="form__name">
+                      <div class="form_name_first">
+                        <input type="text" placeholder="First name" />
+                      </div>
+                      <div class="form_name_last">
+                        <input type="text" placeholder="Last name" />
+                      </div>
+                    </div>
+                    <div class="form__ib">
+                      <div class="form__ib_numberphone">
+                        <i class="bi bi-telephone-fill"></i>
+                        <input type="text" placeholder="1203 2323 3333" />
+                      </div>
+                      <div class="form__ib_code">
+                        <input type="text" placeholder="Code" />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form
+                  class="account__main_setting_body_left_form-address"
+                  action=""
+                >
+                  <div
+                    class="account__main_setting_body_left_form-address_main"
+                  >
+                    <div class="account__main_setting_body_left_form_header">
+                      <h3
+                        class="account__main_setting_body_left_form-info_header_title"
+                      >
+                        Personal Infomation
+                      </h3>
+                      <a
+                        href=""
+                        class="account__main_setting_body_left_form-info_header_edit"
+                      >
+                        <i
+                          class="account__main_setting_body_left_form-info_header_edit-icon bi-pencil"
+                        ></i>
+                        <h3
+                          class="account__main_setting_body_left_form-info_header_edit-text"
+                        >
+                          Edit
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="form__address">
+                      <div class="form__address_group">
+                        <input type="text" placeholder="Country" />
+                      </div>
+                      <div class="form__address_group">
+                        <input type="text" placeholder="City/State" />
+                      </div>
+                      <div class="form__address_group">
+                        <input type="text" placeholder="Street" />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="account__main_setting_body_right">
+                <div class="account__main_setting_body_right_profile">
+                  <h3 class="account__main_setting_body_right_profile-title">
+                    Profile photo
+                  </h3>
+                  <div class="account__main_setting_body_right_profile-images">
+                    <img src="../img/150profile.svg" alt="" />
+                  </div>
+                  <a
+                    href="#"
+                    class="account__main_setting_body_right_profile_info"
+                  >
+                    <div class="account__main_setting_body_right_profile_name">
+                      Ronald Richards
+                    </div>
+                    <i
+                      class="account__main_setting_body_right_profile_iconbi bi-pencil-fill"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- moresection -->
+        <section class="explore">
+          <div class="explore__title">
+            <div class="explore__title-item">More to Explore</div>
+            <div class="explore__title-all">
+              <span> All products</span>
+              <i class="explore__title-shop-icon bi bi-sliders"></i>
+            </div>
+          </div>
+          <div class="explore__container">
+            <div class="explore__container-items">
+              <img
+                src="../img/more1.png"
+                alt=""
+                class="explore__container-img"
+              />
+              <i class="explore__container-icon bi bi-heart"></i>
+              <div class="explore__container-detal">
+                <div class="explore__container-title">
+                  <h3 class="explore__container-title-item">Nike Womens 1</h3>
+                  <div class="explore__container-title-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="explore__container-option">
+                  <span class="explore__container-option-brand"
+                    >Brand Nike</span
+                  >
+                  <a href="#" class="explore__container-option-a"
+                    ><i
+                      class="explore__container-option-icon bi bi-bag-check-fill"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="explore__container-items">
+              <img
+                src="../img/more2.png"
+                alt=""
+                class="explore__container-img"
+              />
+              <i class="explore__container-icon bi bi-heart"></i>
+              <div class="explore__container-detal">
+                <div class="explore__container-title">
+                  <h3 class="explore__container-title-item">Nike Womens 1</h3>
+                  <div class="explore__container-title-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="explore__container-option">
+                  <span class="explore__container-option-brand"
+                    >Brand Nike</span
+                  >
+                  <a href="#" class="explore__container-option-a"
+                    ><i
+                      class="explore__container-option-icon bi bi-bag-check-fill"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="explore__container-items">
+              <img
+                src="../img/more3.png"
+                alt=""
+                class="explore__container-img"
+              />
+              <i class="explore__container-icon bi bi-heart"></i>
+              <div class="explore__container-detal">
+                <div class="explore__container-title">
+                  <h3 class="explore__container-title-item">Nike Womens 1</h3>
+                  <div class="explore__container-title-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+                <div class="explore__container-option">
+                  <span class="explore__container-option-brand"
+                    >Brand Nike</span
+                  >
+                  <a href="#" class="explore__container-option-a"
+                    ><i
+                      class="explore__container-option-icon bi bi-bag-check-fill"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="explore__container-items">
+              <img
+                src="../img/more4.png"
+                alt=""
+                class="explore__container-img"
+              />
+              <div class="explore__container-sale"><span> -30%</span></div>
+              <i class="explore__container-icon bi bi-heart"></i>
+              <div class="explore__container-detal">
+                <div class="explore__container-title">
+                  <h3 class="explore__container-title-item">Nike Womens 1</h3>
+                  <div class="explore__container-title-star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+                <div class="explore__container-option">
+                  <span class="explore__container-option-brand"
+                    >Brand Nike</span
+                  >
+                  <a href="#" class="explore__container-option-a"
+                    ><i
+                      class="explore__container-option-icon bi bi-bag-check-fill"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- footer -->
+      <div class="member">
+        <div class="member__container">
+          <div class="member__title">
+            <h3 class="member__title-content">Become A Member</h3>
+            <img src="../img/logo text.png" alt="" class="member__title-img" />
+          </div>
+          <h3 class="member__title-slogan">
+            Sign up for free. Join the community.
+          </h3>
+          <div class="member__btns">
+            <a href="#" class="member__link">
+              <button class="member__btn">Login</button>
+            </a>
+            <a href="#" class="member__link">
+              <button class="member__btn-signup">Sign up</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__header">
+          <div class="footer__header_content grid">
+            <div class="footer__header_items">
+              <a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">GIFT CARDS</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">PROMOTIONS</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">FIND A STORE</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">SIGN UP FOR EMAIL</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">BECOME A MEMBER</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">SNEAK CARE JOURNAL</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">SEND US FEEDBACK</h2>
+              </a>
+            </div>
+            <div class="footer__header_items">
+              <a href="#" class="footer__header-link"
+                ><h3 class="footer__header-h3">GET HELP</h3></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Order Status</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span"
+                  >Shipping and Delivery</span
+                ></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Returns</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Payment Options</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Gift Card Balance</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Contact Us</span></a
+              >
+            </div>
+
+            <div class="footer__header_items">
+              <a href="#" class="footer__header-link"
+                ><h3 class="footer__header-h3">ABOUT SNEAK CARE</h3></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">News</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Careers</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Investors</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Purpose</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Sustainability</span></a
+              >
+            </div>
+            <div class="footer__header_items">
+              <div class="footer__header_items_icon">
+                <i class="footer__header_icon bi bi-youtube"></i>
+
+                <i class="footer__header_icon bi bi-instagram"></i>
+
+                <i class="footer__header_icon bi bi-facebook"></i>
+
+                <i class="footer__header_icon bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <div class="footer__footer__content grid">
+            <div class="footer__location">
+              <div class="footer__location-icon"><i class="bi bi-map"></i></div>
+              <span class="footer__location-text">Viet Nam</span>
+            </div>
+            <span class="footer__slogan"
+              >© 2023 por Quick Thinking. Proud to be collaborating with leading
+              experts in the field</span
+            >
+          </div>
+        </div>
+      </footer>
+      <script src="../js/cart.js"></script>
+    </div>
+  </body>
+</html>

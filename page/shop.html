@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>shop</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-main grid">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" class="header__logo-img" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-ul">
+              <li class="header__nav-li">
+                <a href="../index.html" class="header__nav-item">Home</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="./shop.html" class="header__nav-item">Man</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="./shop.html" class="header__nav-item">Women</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="./shop.html" class="header__nav-item">Sales</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="./shop.html" class="header__nav-item">Collection</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <!-- icon list -->
+            <div class="menu__nav_list">
+              <i class="menu__nav_list-icon bi bi-list"></i>
+            </div>
+            <div class="header__right-user">
+              <a href="#">
+                <i class="header__right-icon bi bi-person-circle"></i
+              ></a>
+            </div>
+            <div class="header__right-cart">
+              <a href="./cart.html">
+                <i class="header__right-icon bi bi-cart-check-fill"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content__header">
+        <span class="content__header-span"
+          ><h3 class="content__header-h3">FREE DELIVERY</h3>
+          in orders over $400 - Buy with confidence: Free Return and
+          cashback</span
+        >
+      </div>
+      <!-- icon list -->
+      <div class="menu__nav_list_option">
+        <i class="menu__nav_list_option-icon bi bi-list"></i>
+      </div>
+      <!-- main -->
+      <main class="main__shop grid">
+        <!-- main__left -->
+        <aside class="main__left grid__column-2">
+          <div class="main__left_content">
+            <div class="main__left_search">
+              <i class="main__left_search-icon bi bi-search"></i>
+              <input
+                class="main__left_search-input"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+            <section class="main__left_collection">
+              <h3 class="main__left_collection-h3">Collection</h3>
+              <a class="main__left_collection-link" href="">
+                <span class="main__left_collection-span"
+                  >Summer Collection</span
+                ></a
+              >
+              <a class="main__left_collection-link" href="">
+                <span class="main__left_collection-span"
+                  >Spring Collection</span
+                ></a
+              >
+              <a class="main__left_collection-link" href="">
+                <span class="main__left_collection-span"
+                  >Our Collection</span
+                ></a
+              >
+              <a class="main__left_collection-link" href="">
+                <span class="main__left_collection-span"
+                  >Sport Collection</span
+                ></a
+              >
+              <a class="main__left_collection-link" href="">
+                <span class="main__left_collection-span"
+                  >Fall Collection</span
+                ></a
+              >
+            </section>
+            <section class="main__left_gender">
+              <h3 class="main__left_gender-title">Gender</h3>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Men
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Women
+                </label>
+              </div>
+            </section>
+            <section class="main__left_size">
+              <h3 class="main__left_size-title">Size</h3>
+              <div class="main__left_size-container">
+                <div class="main__left_size-item">4</div>
+                <div class="main__left_size-item">4.5</div>
+                <div class="main__left_size-item">5</div>
+                <div class="main__left_size-item">5.5</div>
+                <div class="main__left_size-item">6</div>
+                <div class="main__left_size-item">6.5</div>
+                <div class="main__left_size-item">7</div>
+                <div class="main__left_size-item">7.5</div>
+                <div class="main__left_size-item">8</div>
+                <div class="main__left_size-item">8.5</div>
+                <div class="main__left_size-item">9</div>
+                <div class="main__left_size-item">9.5</div>
+              </div>
+            </section>
+            <section class="main__left_colour">
+              <h3 class="main__left_colour-title">Colour</h3>
+              <div class="main__left_colour-container">
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+                <div class="main__left_colour-item"></div>
+              </div>
+            </section>
+          </div>
+        </aside>
+        <!-- main__right -->
+        <aside class="main__right grid__column-10">
+          <div class="section__title">
+            <div class="section__title_header">
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Short by</option>
+                <option value="1">Price: High-Low</option>
+                <option value="2">Price: Low-High</option>
+                <option value="3">Newest</option>
+              </select>
+            </div>
+            <section class="section__title_main">
+              <div class="section__title_main_container">
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+                <div class="section__title_main_item">
+                  <div class="section__title_main_item-header">
+                    <a class="section__title_main_item-customer-link" href="">
+                      <div class="section__title_main_item-customer">
+                        <img
+                          class="section__title_main_items-customer-main"
+                          src="../img/icon customes.png"
+                          alt=""
+                        /></div
+                    ></a>
+                    <div class="section__title_main_items-icon">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <img
+                    src="../img/shopimg1.png"
+                    alt=""
+                    class="section__title_main_item_product"
+                  />
+                  <div class="section__title_main_item_product-items">
+                    <img
+                      src="../img/shopimg2.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg3.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                    <img
+                      src="../img/shopimg4.png"
+                      alt=""
+                      class="section__title_main_item_product-item"
+                    />
+                  </div>
+                  <img
+                    class="section__title_main_item-vectorbg"
+                    src="../img/vector bg.png"
+                    alt=""
+                  />
+                  <div class="section__title_main_item-content">
+                    <div class="section__title_main_item-content-header">
+                      <h3 class="section__title_main_item-content-h3">
+                        Nike Womens 1
+                      </h3>
+                      <div class="section__title_main_item-content-star">
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-fill"
+                        ></i>
+                        <i
+                          class="section__title_main_item-content-star-icon bi bi-star-half"
+                        ></i>
+                      </div>
+                    </div>
+                    <span class="section__title_main_item-content-price"
+                      >$120</span
+                    >
+                    <span class="section__title_main_item-content-brand"
+                      >Brand Nike</span
+                    >
+                  </div>
+                  <a href="" class="section__title_main_item-cart-link">
+                    <div class="section__title_main_item-cart">
+                      <i
+                        class="section__title_main_item-cart-icon bi bi-cart-plus"
+                      ></i></div
+                  ></a>
+                </div>
+              </div>
+              <div class="section__directional">
+                <i
+                  class="section__directional-icon bi bi-arrow-left-circle-fill"
+                ></i>
+                <div
+                  class="section__directional_number section__directional_number-fisrt"
+                >
+                  <span>1</span>
+                </div>
+                <div class="section__directional_number"><span>2</span></div>
+                <div class="section__directional_number"><span>...</span></div>
+                <div class="section__directional_number"><span>3</span></div>
+                <i
+                  class="section__directional-icon bi bi-arrow-right-circle-fill"
+                ></i>
+              </div>
+            </section>
+            <section class="section__title_main">
+              <h3 class="related__title">Related Categories</h3>
+              <div class="related__container">
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Best Men’s Shoes
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >New Men’s Shoes
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Men's Black Running Shoes
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Men's Joggers & Tracksuit Bottoms
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Men's Joggers & Tracksuit Bottoms
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Men's Cross Training Shoes
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Men's Crew Socks
+                    </span>
+                  </div>
+                </a>
+                <a href="" class="related__container_link">
+                  <div class="related__container_link-item">
+                    <span class="related__container_link-content"
+                      >Turf Football Shoe
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="section__title_trending">
+              <div class="section__title_trending_header">
+                <h3 class="section__title_trending_title">Treding prodcut</h3>
+                <div class="section__title_trending_directional">
+                  <i
+                    class="section__title_trending-icon bi bi-arrow-left-circle-fill"
+                  ></i>
+                  <i
+                    class="section__title_trending-icon bi bi-arrow-right-circle-fill"
+                  ></i>
+                </div>
+              </div>
+              <div class="section__title_trending_container">
+                <a href="" class="section__title_trending-item-link">
+                  <div class="section__title_trending-item">
+                    <img
+                      src="../img/product_shop1.png"
+                      alt=""
+                      class="section__title_trending-image"
+                    />
+                    <div class="section__title_trending-item-content">
+                      <span class="section__title_trending-item-content-span"
+                        >Styling Tips</span
+                      >
+                      <p class="section__title_trending-item-content-p">
+                        5 Golf Outfits for Women To Wear on the Green
+                      </p>
+                    </div>
+                  </div></a
+                >
+                <a href="" class="section__title_trending-item-link">
+                  <div class="section__title_trending-item">
+                    <img
+                      src="../img/product_shop2.png"
+                      alt=""
+                      class="section__title_trending-image"
+                    />
+                    <div class="section__title_trending-item-content">
+                      <span class="section__title_trending-item-content-span"
+                        >Styling Tips</span
+                      >
+                      <p class="section__title_trending-item-content-p">
+                        5 Golf Outfits for Women To Wear on the Green
+                      </p>
+                    </div>
+                  </div></a
+                >
+                <a href="" class="section__title_trending-item-link">
+                  <div class="section__title_trending-item">
+                    <img
+                      src="../img/product_shop3.png"
+                      alt=""
+                      class="section__title_trending-image"
+                    />
+                    <div class="section__title_trending-item-content">
+                      <span class="section__title_trending-item-content-span"
+                        >Styling Tips</span
+                      >
+                      <p class="section__title_trending-item-content-p">
+                        5 Golf Outfits for Women To Wear on the Green
+                      </p>
+                    </div>
+                  </div></a
+                >
+                <a href="" class="section__title_trending-item-link">
+                  <div class="section__title_trending-item">
+                    <img
+                      src="../img/product_shop4.png"
+                      alt=""
+                      class="section__title_trending-image"
+                    />
+                    <div class="section__title_trending-item-content">
+                      <span class="section__title_trending-item-content-span"
+                        >Styling Tips</span
+                      >
+                      <p class="section__title_trending-item-content-p">
+                        5 Golf Outfits for Women To Wear on the Green
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </section>
+          </div>
+        </aside>
+      </main>
+      <div class="member">
+        <div class="member__container">
+          <div class="member__title">
+            <h3 class="member__title-content">Become A Member</h3>
+            <img src="../img/logo text.png" alt="" class="member__title-img" />
+          </div>
+          <h3 class="member__title-slogan">
+            Sign up for free. Join the community.
+          </h3>
+          <div class="member__btns">
+            <a href="#" class="member__link">
+              <button class="member__btn">Login</button>
+            </a>
+            <a href="#" class="member__link">
+              <button class="member__btn-signup">Sign up</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__header">
+          <div class="footer__header_content grid">
+            <div class="footer__header_items">
+              <a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">GIFT CARDS</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">PROMOTIONS</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">FIND A STORE</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">SIGN UP FOR EMAIL</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">BECOME A MEMBER</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">SNEAK CARE JOURNAL</h2> </a
+              ><a href="#" class="footer__header-link">
+                <h2 class="footer__header-text">SEND US FEEDBACK</h2>
+              </a>
+            </div>
+            <div class="footer__header_items">
+              <a href="#" class="footer__header-link"
+                ><h3 class="footer__header-h3">GET HELP</h3></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Order Status</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span"
+                  >Shipping and Delivery</span
+                ></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Returns</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Payment Options</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Gift Card Balance</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Contact Us</span></a
+              >
+            </div>
+
+            <div class="footer__header_items">
+              <a href="#" class="footer__header-link"
+                ><h3 class="footer__header-h3">ABOUT SNEAK CARE</h3></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">News</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Careers</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Investors</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Purpose</span></a
+              ><a href="#" class="footer__header-link"
+                ><span class="footer__header-span">Sustainability</span></a
+              >
+            </div>
+            <div class="footer__header_items">
+              <div class="footer__header_items_icon">
+                <i class="footer__header_icon bi bi-youtube"></i>
+
+                <i class="footer__header_icon bi bi-instagram"></i>
+
+                <i class="footer__header_icon bi bi-facebook"></i>
+
+                <i class="footer__header_icon bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <div class="footer__footer__content grid">
+            <div class="footer__location">
+              <div class="footer__location-icon"><i class="bi bi-map"></i></div>
+              <span class="footer__location-text">Viet Nam</span>
+            </div>
+            <span class="footer__slogan"
+              >© 2023 por Quick Thinking. Proud to be collaborating with leading
+              experts in the field</span
+            >
+          </div>
+        </div>
+      </footer>
+      <script src="../js/shop.js"></script>
+    </div>
+  </body>
+</html>
