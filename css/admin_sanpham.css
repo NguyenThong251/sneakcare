@@ -1,0 +1,7 @@
+main {
+  background-color: rgba(230, 230, 230, 0.38);
+  border-radius: 10px;
+}
+.main__container {
+  padding: 2rem;
+}

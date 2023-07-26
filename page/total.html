@@ -61,28 +61,35 @@
     <div class="app">
       <header class="header">
         <div class="header-main grid">
-          <div class="header__logo">
+          <a href="./index.html" class="header__logo">
             <img src="../img/logo.png" alt="" class="header__logo-img" />
-          </div>
+          </a>
+
+          <!-- icon list -->
           <nav class="header__nav">
             <ul class="header__nav-ul">
               <li class="header__nav-li">
-                <a href="#" class="header__nav-item">Home</a>
+                <a href="#" class="header__nav-item">Trang chủ</a>
               </li>
               <li class="header__nav-li">
-                <a href="#" class="header__nav-item">Man</a>
+                <a href="./page/shop.html" class="header__nav-item">Nam</a>
               </li>
               <li class="header__nav-li">
-                <a href="#" class="header__nav-item">Women</a>
+                <a href="./page/shop.html" class="header__nav-item">Nữ</a>
               </li>
               <li class="header__nav-li">
-                <a href="#" class="header__nav-item">Sales</a>
+                <a href="./page/shop.html" class="header__nav-item"
+                  >Giới thiệu</a
+                >
               </li>
               <li class="header__nav-li">
-                <a href="#" class="header__nav-item">Collection</a>
+                <a href="./page/shop.html" class="header__nav-item"
+                  >Bộ sưu tầm
+                </a>
               </li>
             </ul>
           </nav>
+
           <div class="header__right">
             <!-- icon list -->
             <div class="menu__nav_list">
@@ -94,18 +101,22 @@
               ></a>
             </div>
             <div class="header__right-cart">
-              <a href="./cart.html">
-                <i class="header__right-icon bi bi-cart-check-fill"></i
-              ></a>
+              <a href="#">
+                <i
+                  class="header__right-icon bi bi-cart-check-fill"
+                  onclick="showCart()"
+                ></i>
+                <!-- <span id="countsp">0</span> -->
+              </a>
             </div>
           </div>
         </div>
       </header>
       <div class="content__header">
         <span class="content__header-span"
-          ><h3 class="content__header-h3">FREE DELIVERY</h3>
-          in orders over $400 - Buy with confidence: Free Return and
-          cashback</span
+          ><h3 class="content__header-h3">GIAO HÀNG MIỄN PHÍ</h3>
+          với đơn hàng trên $400 - Mua với sự tự tin: Trả lại miễn phí và hoàn
+          lại tiền</span
         >
       </div>
       <!-- main -->
@@ -116,18 +127,20 @@
               <div class="cart_total-left-nember">
                 <div class="cart_total-left-nember-item">
                   <h3 class="cart_total-lef-nember-title">
-                    Free Shipping for Members.
+                    Miễn phí vận chuyển cho thành viên.
                   </h3>
                   <span class="cart_total-lef-nember-content"
-                    >Become a Nike Member for fast and free shipping.
-                    <a href="#"> Join us</a></span
+                    >Trở thành Thành viên Nike để được vận chuyển nhanh và miễn
+                    phí.
+
+                    <a href="#"> Tham gia với chúng tôi</a></span
                   >
                 </div>
               </div>
               <div class="total__left_summary">
-                <h3 class="total__left_summary-title">Check out</h3>
+                <h3 class="total__left_summary-title">Thanh toán</h3>
                 <span class="total__left_summary-content">
-                  Shipping Address
+                  Địa chỉ giao hàng
                 </span>
               </div>
               <div class="total__left_product">
@@ -138,50 +151,50 @@
                         <i class="bi bi-circle-fill"></i>
                       </div>
                       <span class="total__left_check_text"
-                        >Add New Address</span
+                        >Địa chỉ giao hàng</span
                       >
                     </a>
                     <a href="" class="total__left_info_edit">
                       <div class="total__left_info_edit_icon">
                         <i class="bi bi-pencil"></i>
                       </div>
-                      <span class="total__left_info_edit_span">Edit</span>
+                      <span class="total__left_info_edit_span">Chỉnh sửa</span>
                     </a>
                   </div>
                   <form class="form__info" method="post">
                     <div class="form__name">
                       <div class="form__name_firstname">
-                        <h3 class="form__name_firstname_text">First name</h3>
+                        <h3 class="form__name_firstname_text">Tên</h3>
                         <input type="text" placeholder="First name" />
                       </div>
                       <div class="form__name_lastname">
-                        <h3 class="form__name_lastname_text">Last name</h3>
+                        <h3 class="form__name_lastname_text">Họ</h3>
                         <input type="text" placeholder="Last name" />
                       </div>
                     </div>
                     <div class="form__street">
-                      <h3 class="form__name_street_text">Street Address</h3>
+                      <h3 class="form__name_street_text">Địa chỉ đường phố</h3>
                       <input type="text" placeholder="Street Address" />
                     </div>
                     <div class="form__footer">
                       <div class="form__footer_state">
-                        <h3 class="form__footer_state_text">State</h3>
+                        <h3 class="form__footer_state_text">Quận</h3>
                         <input type="text" placeholder="State" />
                       </div>
                       <div class="form__footer_city">
-                        <h3 class="form__footer_city_text">City</h3>
+                        <h3 class="form__footer_city_text">Thành phố</h3>
                         <input type="text" placeholder="City" />
                       </div>
                       <div class="form__footer_phone_number">
                         <h3 class="form__footer_phone_number_text">
-                          Phone Number
+                          Số điện thoại
                         </h3>
                         <input type="text" placeholder="Phone Number" />
                       </div>
                     </div>
                   </form>
                   <a href="#" class="total__left_indo_linkbtn"
-                    ><button class="btn">USE THIS</button></a
+                    ><button class="btn">Xác nhận</button></a
                   >
                 </div>
                 <!-- <div class="container-total--none">
@@ -250,14 +263,16 @@
                 </div> -->
               </div>
               <div class="total__left_shipping">
-                <h3 class="total__left_shipping_title">Payment Method</h3>
+                <h3 class="total__left_shipping_title">
+                  Phương thức thanh toán
+                </h3>
                 <div class="total__left_shipping-item">
                   <div class="total__left_pay">
                     <div class="total__left_pay_header">
                       <a class="total__left_pay_check">
                         <i class="total__left_pay_iconcheck bi bi-circle"></i>
                         <span class="total__left_pay_title"
-                          >Credit or Debit Card</span
+                          >Thẻ tín dụng hoặc thẻ ghi nợ</span
                         >
                       </a>
                       <a class="total__left_pay_card">
@@ -272,19 +287,17 @@
                     <form class="form__info" method="post">
                       <div class="form__name">
                         <div class="form__name_firstname">
-                          <h3 class="form__name_firstname_text">
-                            Name on cart
-                          </h3>
+                          <h3 class="form__name_firstname_text">Tên thẻ</h3>
                           <input type="text" placeholder="Name on cart" />
                         </div>
                         <div class="form__name_lastname">
-                          <h3 class="form__name_lastname_text">Number Visa</h3>
+                          <h3 class="form__name_lastname_text">Visa số</h3>
                           <input type="password" placeholder="**** 1234 ****" />
                         </div>
                       </div>
                       <div class="form__name">
                         <div class="form__name_firstname">
-                          <h3 class="form__name_firstname_text">Expiration</h3>
+                          <h3 class="form__name_firstname_text">Hết hạn</h3>
                           <input type="text" placeholder="Expiration" />
                         </div>
                         <div class="form__name_lastname">
@@ -296,7 +309,7 @@
 
                     <!-- form end-->
                     <a href="#" class="total__left_indo_linkbtn"
-                      ><button class="btn">CONFIRM</button></a
+                      ><button class="btn">Xác nhận</button></a
                     >
                   </div>
                 </div>
@@ -307,11 +320,11 @@
             <div class="main__cart_total-right-container">
               <div class="main__cart_total-right-header">
                 <h3 class="main__cart_total-right-title">
-                  Review Order Details
+                  Xem lại chi tiết đơn hàng
                 </h3>
                 <a href="" class="main__cart_total-right-haeder_edit">
                   <i class="bi bi-pencil"></i>
-                  <span>Edit</span>
+                  <span>Chỉnh sửa</span>
                 </a>
               </div>
               <div class="main__cart_total_right_product">
@@ -368,24 +381,24 @@
               </div>
               <div class="main__cart_total-right-subtotal">
                 <h3 class="main__cart_total-right-subtotal-content">
-                  Subtotal
+                  Tổng phụ
                 </h3>
                 <p class="main__cart_total-right-subtotal-price">$387.700</p>
               </div>
               <div class="main__cart_total-right-subtotal">
                 <h3 class="main__cart_total-right-subtotal-content">
-                  Estimated Shipping & Handing
+                  ước tính Vận Chuyển & Bàn Giao
                 </h3>
                 <p class="main__cart_total-right-subtotal-price">$7.00</p>
               </div>
               <div class="main__cart_total-right-subtotal">
                 <h3 class="main__cart_total-right-subtotal-content">
-                  Estimated Tax
+                  Thuế ước tính
                 </h3>
                 <p class="main__cart_total-right-subtotal-price">-</p>
               </div>
               <div class="main__cart_total-right-total">
-                <h3 class="main__cart_total-right-total-content">Total</h3>
+                <h3 class="main__cart_total-right-total-content">Tổng</h3>
                 <p class="main__cart_total-right-total-price">387,000</p>
               </div>
               <div class="main__cart_total-right-checkout">
@@ -393,7 +406,7 @@
                   id="checkoutt"
                   class="main__cart_total-right-checkout-btn btn"
                 >
-                  Check Out
+                  Thanh toán
                 </button>
 
                 <a href="" class="main__cart_total-right-checkout-link"
@@ -408,9 +421,9 @@
         <!-- moresection -->
         <section class="explore">
           <div class="explore__title">
-            <div class="explore__title-item">More to Explore</div>
+            <div class="explore__title-item">Khám phá nhiều hơn</div>
             <div class="explore__title-all">
-              <span> All products</span>
+              <span>Tất cả sản phẩm </span>
               <i class="explore__title-shop-icon bi bi-sliders"></i>
             </div>
           </div>
@@ -543,18 +556,18 @@
       <div class="member">
         <div class="member__container">
           <div class="member__title">
-            <h3 class="member__title-content">Become A Member</h3>
+            <h3 class="member__title-content">Trở thành một thành viên</h3>
             <img src="../img/logo text.png" alt="" class="member__title-img" />
           </div>
           <h3 class="member__title-slogan">
-            Sign up for free. Join the community.
+            Đăng kí miễn phí. Tham gia vào cộng đồng.
           </h3>
           <div class="member__btns">
             <a href="#" class="member__link">
-              <button class="member__btn">Login</button>
+              <button class="member__btn">Đăng nhập</button>
             </a>
             <a href="#" class="member__link">
-              <button class="member__btn-signup">Sign up</button>
+              <button class="member__btn-signup">Đăng kí</button>
             </a>
           </div>
         </div>
@@ -564,54 +577,58 @@
           <div class="footer__header_content grid">
             <div class="footer__header_items">
               <a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">GIFT CARDS</h2> </a
+                <h2 class="footer__header-text">THẺ QUÀ TẶNG</h2> </a
               ><a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">PROMOTIONS</h2> </a
+                <h2 class="footer__header-text">KHUYẾN MÃI</h2> </a
               ><a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">FIND A STORE</h2> </a
+                <h2 class="footer__header-text">TÌM MÔT CỬA HÀNG</h2> </a
               ><a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">SIGN UP FOR EMAIL</h2> </a
+                <h2 class="footer__header-text">ĐĂNG KÝ EMAIL</h2> </a
               ><a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">BECOME A MEMBER</h2> </a
+                <h2 class="footer__header-text">
+                  TRỞ THÀNH MỘT THÀNH VIÊN
+                </h2> </a
               ><a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">SNEAK CARE JOURNAL</h2> </a
+                <h2 class="footer__header-text">TẠP CHÍ CHĂM SÓC</h2> </a
               ><a href="#" class="footer__header-link">
-                <h2 class="footer__header-text">SEND US FEEDBACK</h2>
+                <h2 class="footer__header-text">GỬI PHẢN HỒI CHO CHÚNG TÔI</h2>
               </a>
             </div>
             <div class="footer__header_items">
               <a href="#" class="footer__header-link"
-                ><h3 class="footer__header-h3">GET HELP</h3></a
+                ><h3 class="footer__header-h3">ĐƯỢC GIÚP ĐỠ</h3></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Order Status</span></a
+                ><span class="footer__header-span">Tình trạng đặt hàng</span></a
               ><a href="#" class="footer__header-link"
                 ><span class="footer__header-span"
-                  >Shipping and Delivery</span
+                  >Vận chuyển và giao hàng</span
                 ></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Returns</span></a
+                ><span class="footer__header-span">Đổi trả</span></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Payment Options</span></a
+                ><span class="footer__header-span"
+                  >Các lựa chọn thanh toán</span
+                ></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Gift Card Balance</span></a
+                ><span class="footer__header-span">Số dư thẻ quà tặng</span></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Contact Us</span></a
+                ><span class="footer__header-span">Liên hệ chúng tôi</span></a
               >
             </div>
 
             <div class="footer__header_items">
               <a href="#" class="footer__header-link"
-                ><h3 class="footer__header-h3">ABOUT SNEAK CARE</h3></a
+                ><h3 class="footer__header-h3">VỀ CHÚNG TÔI</h3></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">News</span></a
+                ><span class="footer__header-span">Tin tức</span></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Careers</span></a
+                ><span class="footer__header-span">Nghề nghiệp</span></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Investors</span></a
+                ><span class="footer__header-span">Nhà đầu tư</span></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Purpose</span></a
+                ><span class="footer__header-span">Mục đích</span></a
               ><a href="#" class="footer__header-link"
-                ><span class="footer__header-span">Sustainability</span></a
+                ><span class="footer__header-span">Sự bền vững</span></a
               >
             </div>
             <div class="footer__header_items">
@@ -634,8 +651,8 @@
               <span class="footer__location-text">Viet Nam</span>
             </div>
             <span class="footer__slogan"
-              >© 2023 por Quick Thinking. Proud to be collaborating with leading
-              experts in the field</span
+              >© 2023 bởi Sneak care. Tự hào được hợp tác với các nhà lãnh đạo
+              các chuyên gia trong lĩnh vực</span
             >
           </div>
         </div>

@@ -608,6 +608,22 @@ body {
   color: var(--black-color);
   animation: hover 0.4s ease-in forwards;
 }
+.btn-buy {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #008ab2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-buy:hover {
+  background-color: #006783;
+  transition: all 0.2s linear;
+}
+.product__quatity {
+  width: 30px;
+  border: none;
+}
 .season {
   margin-top: 8rem;
 }

@@ -27,6 +27,16 @@ button {
   outline: none;
   border: 0;
 }
+.contine {
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--text-color);
+  /* outline: none; */
+  /* border: 0; */
+  border-radius: 5px;
+}
 body {
   min-height: 100vh;
   font-weight: 400;
@@ -143,6 +153,7 @@ body {
 .cart_total-left-content {
   padding: 15px;
 }
+
 .cart_total-left-nember {
   background: #ffffff;
   border: 1px solid #024c62;
@@ -170,6 +181,19 @@ body {
 .total__left_summary {
   padding: 17px 0;
   width: 467px;
+}
+.delete {
+  color: var(--white-color);
+  background-color: var(--text-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+.empty-cart {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  text-align: center;
 }
 .total__left_summary-title {
   font-weight: 500;
